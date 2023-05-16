@@ -1,4 +1,6 @@
-## UBERT: Unsupervised Early Exits in BERT
+## UBERT: Unsupervised Adaptive Early Exits in BERT
+
+This repository is the official implementation of UBERT.
 The experimental section of UBERT can be divided into two major parts:
 
 Part 1 (Finetuning and predictions): We finetune the ElasticBERT backbone after attaching exits to all the layers on RTE, SST-2, MNLI and MRPC (GLUE) datasets and then obtain prediction as well as confidence values for the evaluation (SciTail, IMDB, Yelp, SNLI, QQP)(GLUE and ELUE datasets except IMDB)  i.e. all exit predictions for all samples (num_samples X num_exits)
@@ -6,6 +8,12 @@ Part 1 (Finetuning and predictions): We finetune the ElasticBERT backbone after 
 Part 2: Evaluate UBERT using the prediction matrix which could be done by running "Optimal threshold-correct" file. We have provided the prediction matrix for Yelp dataset as a csv file which could be used to evaluate UBERT(Early_Exit_Confidence_data_yelp____.csv)
 
 For UBERT with 2 exits execute the "UBERT_for_two_layers_reduced" file.
+
+## Requirements
+To install requirements 
+```setup
+pip install -r requirements.txt
+```
 
 ## Datasets
 
