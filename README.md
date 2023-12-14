@@ -7,7 +7,7 @@ Part 1 (Finetuning and predictions): We finetune the ElasticBERT backbone after 
 
 Part 2: Evaluate UBERT using the prediction matrix which could be done by running "UBERT one exit" file. We have provided the prediction matrix for Yelp dataset as a csv file which could be used to evaluate UBERT(Early_Exit_Confidence_data_yelp____.csv)
 
-For UBERT with 2 exits execute the "UBERT_for_two_layers_reduced" file.
+For UBERT with 2 exits execute the "ubert_same" file.
 
 ## Requirements
 To install requirements 
