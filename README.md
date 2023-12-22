@@ -1,13 +1,13 @@
-## UBERT: Unsupervised Adaptive Early Exits in BERT
+## CeeBERT: Cross-Domain Inference in Early Exit BERT
 
-This repository is the official implementation of UBERT.
+This repository is the official implementation of CeeBERT.
 The experimental section of UBERT can be divided into two major parts:
 
 Part 1 (Finetuning and predictions): We finetune the ElasticBERT backbone after attaching exits to all the layers on RTE, SST-2, MNLI and MRPC (GLUE) datasets and then obtain prediction as well as confidence values for the evaluation (SciTail, IMDB, Yelp, SNLI, QQP)(GLUE and ELUE datasets except IMDB)  i.e. all exit predictions for all samples (num_samples X num_exits)
 
-Part 2: Evaluate UBERT using the prediction matrix which could be done by running "UBERT one exit" file. We have provided the prediction matrix for Yelp dataset as a csv file which could be used to evaluate UBERT(Early_Exit_Confidence_data_yelp____.csv)
+Part 2: We have provided the prediction matrix for Yelp dataset as a csv file which could be used to evaluate UBERT(Early_Exit_Confidence_data_yelp____.csv)
 
-For UBERT with 2 exits execute the "ubert_same" file.
+For CeeBERT with exits execute the "CeeBERT_same" file.
 
 ## Requirements
 To install requirements 
